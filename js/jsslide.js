@@ -69,7 +69,7 @@ function JSSlideClass(options) {
                 if (context.slides[i] == undefined) {
                     $.ajax({
                         type: "GET",
-                        url: '/slides/' + i + '.html',
+                        url: '/JSSlideEngine/slides/' + i + '.html',
                         dataType: 'html',
                         context: context,
                         success: function(data) {
@@ -130,7 +130,7 @@ function JSSlideClass(options) {
             (function(context, slideIdx){
                 $.ajax({
                     type: "GET",
-                    url: '/slides/' + slideIdx + '.html',
+                    url: '/JSSlideEngine/slides/' + slideIdx + '.html',
                     dataType: 'html',
                     context: context,
                     success: function(data) {
@@ -165,7 +165,7 @@ function JSSlideClass(options) {
     this.init = function() {
         $.ajax({
             type: "GET",
-            url: '/slides/' + FIST_SLIDE_INDEX + '.html',
+            url: '/JSSlideEngine/slides/' + FIST_SLIDE_INDEX + '.html',
             dataType: 'html',
             context: this,
             success: function(data) {
