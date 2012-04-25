@@ -88,6 +88,12 @@ function JSSlideClass(options) {
 
             this.currentSlide = slideIdx;
             this.slideIdxInput.val(slideIdx);
+
+            if (window.history && history.pushState) {
+                history.pushState(null, null, "#slide" + slideIdx)
+            }
+
+            // :TODO: load next slides if close to the end of slides array
         } else {
             // slide doesn't loaded, load him
             (function(context, slideIdx){
