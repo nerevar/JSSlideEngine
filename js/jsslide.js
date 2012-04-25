@@ -76,10 +76,16 @@ function JSSlideClass(options) {
         }
 
         if (this.slides[slideIdx]) {
-            // slide exists, show him
-            this.container
-                .empty()
-                .html(this.slides[slideIdx]);
+            // slide exists, show him with fade animation
+            (function(contextJSSlideClass){
+                contextJSSlideClass.container.fadeOut(function(){
+                    contextJSSlideClass.container
+                        .empty()
+                        .html(contextJSSlideClass.slides[slideIdx])
+                        .fadeIn();
+                });
+            })(this);
+
             this.currentSlide = slideIdx;
             this.slideIdxInput.val(slideIdx);
         } else {

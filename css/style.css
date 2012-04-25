@@ -109,7 +109,7 @@ td { vertical-align: top; }
 
 .slide {
     width: 70%;
-    margin: 10% auto 0;
+    margin: 50px auto 0;
     border: 1px solid #ccc;
     height: 450px;
     overflow: auto;
@@ -118,8 +118,9 @@ td { vertical-align: top; }
 .controls {
     border: 1px solid #ccc;
     width: 200px;
-    margin: 0 auto;
+    margin: 10px auto 0;
     text-align: center;
+    padding: 10px;
 }
 .controls .controls__prev {}
 .controls .controls__next {}
