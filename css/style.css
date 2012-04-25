@@ -85,7 +85,7 @@ td { vertical-align: top; }
 /* =============================================================================
    Print Styles
    ========================================================================== */
- 
+
 @media print {
   * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
   a, a:visited { text-decoration: underline; }
@@ -108,35 +108,35 @@ td { vertical-align: top; }
    ========================================================================== */
 
 h1 {
-    font: 22px/44px Georgia, Tahoma;
-    font-weight: bold;
+	font: 22px/44px Georgia, Tahoma;
+	font-weight: bold;
 }
 .slide {
-    width: 70%;
-    margin: 50px auto 0;
-    border: 1px solid #ccc;
-    height: 450px;
-    overflow: auto;
-    padding: 5px;
+	width: 70%;
+	margin: 50px auto 0;
+	border: 1px solid #ccc;
+	height: 450px;
+	overflow: auto;
+	padding: 5px;
 }
 .controls {
-    border: 1px solid #ccc;
-    width: 200px;
-    margin: 10px auto 0;
-    text-align: center;
-    padding: 10px;
+	border: 1px solid #ccc;
+	width: 200px;
+	margin: 10px auto 0;
+	text-align: center;
+	padding: 10px;
 }
 .controls .controls__prev {}
 .controls .controls__next {}
 .controls .controls__slideidx {
-    width: 20px;
+	width: 20px;
 }
 
 table.example {
-    width: 40%;
+	width: 40%;
 }
 table.example tr {}
 table.example td {
-    border: 1px solid black;
-    text-align: center;
+	border: 1px solid black;
+	text-align: center;
 }
