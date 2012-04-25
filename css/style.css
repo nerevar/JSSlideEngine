@@ -9,7 +9,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
-body { margin: 0; font: 14px/21px Tahoma; line-height: 1.4; }
+body { margin: 0; font: 14px/21px Tahoma, sans-serif; line-height: 1.4; }
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
@@ -107,6 +107,10 @@ td { vertical-align: top; }
    Author: Roman Rybalchenko
    ========================================================================== */
 
+h1 {
+    font: 22px/44px Georgia, Tahoma;
+    font-weight: bold;
+}
 .slide {
     width: 70%;
     margin: 50px auto 0;
@@ -126,4 +130,13 @@ td { vertical-align: top; }
 .controls .controls__next {}
 .controls .controls__slideidx {
     width: 20px;
+}
+
+table.example {
+    width: 40%;
+}
+table.example tr {}
+table.example td {
+    border: 1px solid black;
+    text-align: center;
 }

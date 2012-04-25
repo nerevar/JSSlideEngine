@@ -4,7 +4,7 @@
          * Creates new JSSlide object
          */
 		JSSlide = new JSSlideClass({
-			totalSlides: 5,
+			totalSlides: 10,
             container: $('.slide'),
             slideIdxInput: $('.controls__slideidx')
 		});
