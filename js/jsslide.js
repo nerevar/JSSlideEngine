@@ -15,7 +15,7 @@ function JSSlideClass(options) {
 	/**
 	 * Constant that defines index of first slide. Usually equals 1
 	 */
-	var FIST_SLIDE_INDEX = 1;
+	var FIRST_SLIDE_INDEX = 1;
 
 	/**
 	 * Total count of slides
@@ -165,12 +165,12 @@ function JSSlideClass(options) {
 	this.init = function() {
 		$.ajax({
 			type: "GET",
-			url: '/slides/' + FIST_SLIDE_INDEX + '.html',
+			url: '/slides/' + FIRST_SLIDE_INDEX + '.html',
 			dataType: 'html',
 			context: this,
 			success: function(data) {
-				this.slides[FIST_SLIDE_INDEX] = data;
-				this.show(FIST_SLIDE_INDEX);
+				this.slides[FIRST_SLIDE_INDEX] = data;
+				this.show(FIRST_SLIDE_INDEX);
 			}
 		});
 	};
